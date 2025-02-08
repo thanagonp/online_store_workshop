@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signin-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #e5e7eb;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+
+.signin-box h1 {
+  @apply text-3xl font-bold text-center mb-4;
+}
+input {
+  @apply border border-gray-300 rounded-md p-1 w-full;
+}
+.signin-box button {
+  @apply bg-blue-500 text-white rounded-md p-2 mt-4 hover:bg-blue-600;
+}
+
+.menu{
+  @apply hover:bg-teal-700 p-2 pl-3;
+}
+
+.btn{
+  @apply bg-teal-500 text-white rounded-md pt-2 pb-2 pr-4 pl-4 mt-4 hover:bg-teal-600;
+}
+
+.content-header{
+  @apply text-xl font-bold border-b border-teal-500 text-teal-500 p-3 pt-0;
+}
