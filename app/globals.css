@@ -25,7 +25,7 @@
   @apply text-3xl font-bold text-center mb-4;
 }
 input {
-  @apply border border-gray-300 rounded-md p-1 w-full;
+  @apply border border-gray-600 rounded-md p-1 w-full;
 }
 .signin-box button {
   @apply bg-blue-500 text-white rounded-md p-2 mt-4 hover:bg-blue-600;
@@ -42,3 +42,32 @@ input {
 .content-header{
   @apply text-xl font-bold border-b border-teal-500 text-teal-500 p-3 pt-0;
 }
+
+.table {
+  @apply w-full border-collapse;
+}
+
+.table thead {
+  @apply bg-teal-500 text-white;
+}
+
+.table thead th {
+  @apply p-3 text-left;
+}
+
+.table tbody tr {
+  @apply border-b border-gray-300;
+}
+
+.table tbody td {
+  @apply p-3 text-left bg-gray-100 border-l-2;
+}
+
+.btn-delete{
+  @apply bg-red-500 text-white rounded-md pt-1 pb-1 pr-2 pl-2 mt-2 hover:bg-red-600;
+}
+
+.btn-edit{
+  @apply bg-blue-500 text-white rounded-md pt-1 pb-1 pr-2 pl-2 mt-2 hover:bg-blue-600;
+}
+

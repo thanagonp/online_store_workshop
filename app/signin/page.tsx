@@ -31,11 +31,19 @@ export default function SignInPage() {
                 });
             }
         } catch (error: any) {
-            Swal.fire({
+            if(error.response.status === 401){
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Sign In Failed',
+                    text: 'Invalid username or password',
+                });
+            }else{
+                Swal.fire({
                 icon: 'error',
                 title: 'Sign In Failed',
                 text: error.response.data.message,
-            });
+                });
+            }
         }
     }
 
