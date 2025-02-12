@@ -125,10 +125,11 @@ export default function Sidebar() {
                  </Link>
             </div>
             <div className="menu">
-                 <Link href="/backoffice/product">
+                 <Link href="/backoffice/repair">
                  ซ่อมสินค้า
                  </Link>
             </div>
+            
         </div>
 
         <Modal isOpen={isOpen} onClose={handleCloseModal} title="แก้ไขข้อมูล">
